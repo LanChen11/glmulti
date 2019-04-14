@@ -1,4 +1,12 @@
+import(methods)
 import(rJava)
+
+importFrom("graphics", "abline", "barplot", "par", "plot")
+importFrom("stats", "as.formula", "coef", "delete.response", "formula",
+           "lm", "logLik", "model.frame", "nobs", "predict", "qnorm",
+           "qt", "resid", "terms")
+importFrom("utils", "flush.console", "write.table")
+
 export(
 glmulti, plot.glmulti, print.glmulti, summary.glmulti, coef.glmulti, predict.glmulti, 
 consensus, getfit, aic, aicc, bic, qaic, qaicc, write, weightable
@@ -6,7 +14,6 @@ consensus, getfit, aic, aicc, bic, qaic, qaicc, write, weightable
 
 exportClasses("glmulti")
 exportMethods("write", "consensus", "getfit", "aic", "aicc", "qaic", "qaicc", "bic","weightable")
-
 
 S3method(print, glmulti)
 S3method(summary,glmulti)
