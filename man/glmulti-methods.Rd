@@ -21,7 +21,7 @@ The output can be used for model selection, variable selection, and multimodel i
 
 \item{y = "ANY", xr = "ANY", data = "ANY", exclude = "ANY"}{ This will stop with a warning that an improper call has been attempted. }
 
-\item{y = "character", xr = "character", data = "ANY", exclude = "ANY"}{ Calling \code{glmulti} by providing the names of the response variable and of the predictors as
+\item{y = "character", xr = "character", data = "ANY", exclude = "ANY"}{ Calling \code{glmulti} with the names of the response variable and of the predictors as
 character strings. This is the original interface used in versions earlier than 0.6-1. }
 
 \item{y = "character", xr = "missing", data = "ANY", exclude = "missing"}{
@@ -35,10 +35,10 @@ Calling \code{glmulti} with a model formula containing all the terms to be inclu
 Calling \code{glmulti} on a list of (fitted) model objects. Models will not be refitted, but the information criteria will be computed and a regular \code{glmulti} object is returned.}
 
 \item{y = "glm", xr = "missing", data = "ANY", exclude = "missing"}{ 
-Calling \code{glmulti} with a \code{glm} object from which the formula and other parameters will eb extracted. }
+Calling \code{glmulti} with a \code{glm} object from which the formula and other parameters will be extracted. }
 
 \item{y = "lm", xr = "missing", data = "ANY", exclude = "missing"}{ 
-Calling \code{glmulti} with a \code{lm} model from which the formula and other parameters will eb extracted.. }
+Calling \code{glmulti} on a \code{lm} object from which the formula and other parameters will be extracted. }
 
 \item{y = "missing", xr = "ANY", data = "ANY", exclude = "ANY"}{
 If \code{y} is missing the \code{glmulti} version currently used is printed.}

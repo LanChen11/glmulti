@@ -80,4 +80,7 @@ Version 1.0.7 (2013-04-10)
 Changed: the estimated c-hat value to be used with QAIC/QAICC is now to be passed through option "glmulti-cvalue" rather than through the global variable "glmultiqaiccvalue" as it is used to be.
 Fixed typo in qaic/qaicc (thanks to Marin Greenwood)
 
+Version 1.0.8 (2020-05-25)
+Fixed: calls to deprecated functions windows() and .readRDS() have been suppressed and updated
+
 

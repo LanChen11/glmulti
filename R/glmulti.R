@@ -69,7 +69,7 @@ plot.glmulti<-function(x, type="p", ...)
 	} else if (type=="r") {
 		if (length(x@objects)) {
 		# shows some diagnostics of the fit
-		windows(21,7)
+		dev.new()
 		par(mfrow=c(2,min(length(x@crits), 5)))
 		for (k in 1:min(length(x@crits), 5)) 
 			plot(x@objects[[k]],which=c(1), main=deparse(x@formulas[[k]]),...)
@@ -442,7 +442,7 @@ setMethod("consensus", signature(xs="list"), function (xs, confsetsize, ...)
 	if (class(i)=="glmulti")
 		lespaul=c(lespaul, i)
 	else if (class(i)=="character") {
-			paul = .readRDS(file=i)
+			paul = readRDS(file=i)
 			if (class(paul)=="glmulti")
 				lespaul=c(lespaul,paul)
 		}

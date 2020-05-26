@@ -1,7 +1,10 @@
 import(methods)
 import(rJava)
+import(leaps)
+
 
 importFrom("graphics", "abline", "barplot", "par", "plot")
+importFrom("grDevices", "dev.new")
 importFrom("stats", "as.formula", "coef", "delete.response", "formula",
            "lm", "logLik", "model.frame", "nobs", "predict", "qnorm",
            "qt", "resid", "terms")
